@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+        <script src="script.js"></script>
+        <title>Kapcsolat - Leopárd 2 széria</title>
+    </head>
+    <body onload='writeDate()'>
+        <nav id="tartalomraugras">
+            <a href="#tartalom">Ugrás a tartalomra!</a>
+        </nav>
+        <header id="teteje">
+            <div id="menutoprow">
+                <div class="menutop">
+                    <img class="menupic" src="image/small_Leopard_2AV.jpg" alt="Leopard 2AV tank" onclick = "window.location.href = 'image/Leopard_2AV.jpg'">
+                </div>
+                <div class="menutop">
+                    <img class="menupic" src="image/small_Leopard_2PL.jpg" alt="Leopard 2PL tank" onclick = "window.location.href = 'image/Leopard_2PL.jpg'">
+                </div>
+                <div id="menutitle">
+                    <h1 class="menutitle">Kapcsolat</h1>
+                </div>
+                <div class="menutop">
+                    <img class="menupic" src="image/small_Leopard_2A5_PSO.jpg" alt="Leopard 2A5 PSO tank" onclick = "window.location.href = 'image/Leopard_2A5_PSO.jpg'">
+                </div>
+                <div class="menutop">
+                    <img class="menupic" src="image/small_Leopard_2A7.jpg" alt="Leopard 2A7 tank" onclick = "window.location.href = 'image/Leopard_2A7.jpg'">
+                </div>
+            </div>
+            <nav>
+                <button class="menubut" onclick="window.location.href = 'techdata.html'">Technikai adatok</button>
+                <button class="menubut" onclick="window.location.href = 'armament.html'">Fegyverzet</button>
+                <button class="menubut" onclick="window.location.href = 'index.html'">Kezdőlap</button>
+                <button class="menubut" onclick="window.location.href = 'operatingcountries.html'">Üzemeltető országok</button>
+                <button class="menucur">Kapcsolat</button>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <button id="switcher" onclick="toggleCSS('style.css', 'alternative.css')"></button>
+                <h2>Kapcsolat</h2>
+                <p class="contactp">Szabadidőmben tankokkal foglalkozok, velük kapcsolatos játékokkal játszok, cikkeket olvasok így szívesen készítek velük kapcsolatos weblapokat!
+                    Ossza meg velem milyen tankról olvasna legközelebb egy általam készített weboldalon.</p>
+            </article>
+            <form action="mailto:gipszjakab@mailinator.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <fieldset>
+                        <legend>Beküldendő tank és beküldő adatai:</legend>
+                        <label for="nev">Ön neve:</label><br>
+                        <input type="text" name="nev" id="nev" size="40"><br>
+                        <label for="email">Ön email címe:</label><br>
+                        <input type="email" name="email" id="email" size="60"><br>
+                        <label for="tanknev">Tank neve:</label><br>
+                        <input id="tanknev" type="text" name="tankneve" size="30" value="A tank neve: "><br>
+                        <label for="osszefoglalas">Rövid leírása:</label><br>
+                        <textarea id="osszefoglalas" cols="60" rows="10" name="leiras" placeholder="A tank ismertetői:..."></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tank típusa</legend>
+                        <input type="radio" name="tank" id="natobutton" value="NATO">
+                        <label for="natobutton">NATO tank</label>
+                        <input type="radio" name="tank" id="vszbutton" value="Varsói Szerződés">
+                        <label for="vszbutton">Varsói szerződés tank</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Hírlevél és név védelmi hozzájárulás</legend>
+                        <input type="checkbox" name="hirlevel" id="hirlevel" value="igen">
+                        <label for="hirlevel">Hozzájárulok, hogy az új weblapokról értesítést kapjak emailben.</label><br>
+                        <input type="checkbox" name="adatok" id="adatok" value="igen">
+                        <label for="adatok">Hozzájárulok, hogy nevemet a következő weblapon feltüntessék.</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adatok elküldése</legend>
+                        <input type="submit" value="Elküld" id="submitbutton">
+                        <input type="reset" value="Töröl" id="resetbutton">
+                    </fieldset>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <button class="switch" id="right" onclick="window.location.href = 'index.html'"></button>
+            </nav>
+            <div class="tetejere">
+                <nav>
+                    <a href="#teteje">Ugrás az oldal tetejére!</a>
+                </nav>
+            </div>
+            <div id="dates" >Jelenlegi dátum: <span id="date"></span></div>
+            <nav>
+                <button class="switch" id="left" onclick="window.location.href = 'operatingcountries.html'"></button>
+            </nav>
+        </footer>
+    </body>
+</html>

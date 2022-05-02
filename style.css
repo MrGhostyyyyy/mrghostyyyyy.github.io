@@ -1,0 +1,471 @@
+@import'https://fonts.googleapis.com/css2?family=Bebas+Neue';
+
+*, html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:darkolivegreen;
+    font-family:Times, Helvetica, sans-serif, serif, cursive;
+}
+
+/*menu*/
+
+#tartalomraugras a {
+    position:absolute;
+    left:-9999px;
+}
+
+#tartalomraugras a:focus {
+    position:static; 
+    background-color:white;
+    color:brown;
+}
+
+header, .header {
+    background-image:url("image/terepminta.jpg");
+    background-size:cover;
+    min-width:550px;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.menutitle { 
+    font-size:4em;
+    font-family:'Bebas Neue', cursive;
+    font-weight:bold;
+    color:white;
+    text-shadow:3px 3px 0 black, 5px 5px 5px white;
+}
+
+#menutoprow {
+    height:20%;
+    display:flex;
+    flex-flow:row wrap;
+    margin:auto;
+    text-align:center;
+}
+
+.menutop, #menutitle {
+    width:20%;
+    padding-top:20px;
+}
+
+#menutitle {margin:auto; text-align:center;}
+
+.menupic {
+    min-width:10%;
+    width:70%;
+    border:2px solid black;
+    box-shadow: 1px 1px black, 3px 3px 3px white;
+    cursor:pointer;
+}
+
+/*menu buttons*/
+
+.menubut, .menucur {
+    width:20%;
+    height:50px;
+    background-color:darkseagreen;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    font-size:1.5em;
+    float:left;
+    cursor:pointer;
+}
+
+.menucur {
+    cursor:default;
+    pointer-events:none;
+    background-color:navy;
+}
+
+.menubut:hover {opacity:0.5}
+
+/*video*/
+video {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:30px;
+    width:60%;
+}
+aside {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+}
+
+/*css switch*/
+
+#switcher {
+    background-image:url('image/gyengenlato.png');
+    background-size:100%;
+    border:0;
+    width:50px;
+    height:50px;
+    margin-bottom:20px;
+    background-color:transparent;
+    cursor:pointer;
+}
+#switcher:hover{
+    opacity:0.8;
+    background-color:black;
+}
+
+/*main*/
+
+main, #tartalom {
+    min-width:500px;
+    max-width:90%;
+    margin-top:0;
+    margin-bottom:0;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:beige;
+    padding: 20px;
+    overflow:hidden;
+}
+
+caption {
+    margin-top:30px;
+    text-align:left;
+    font-size:2em;
+    font-family:'Times New Roman', Times, serif;
+    color:brown;
+}
+
+details p {font-size:0.6em; font-family: Arial, Helvetica, sans-serif;} 
+
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color:white;
+    font-size:1.8em;
+    border:2px brown solid;
+}
+
+table tr {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:silver;
+    color:brown;
+    text-align:center;
+}
+
+table td {border:2px brown solid; font-size:1.4em;}
+
+.fstrow {width:20%;}
+
+.sndrow {width:25%;}
+
+.rdrow {width:55%;}
+
+#mainpic {
+    margin-right:30px;
+    width:90%;
+    margin-left:30px;
+    cursor:pointer;
+    margin-top:30px;
+}
+
+article p {font-size:1.6em;}
+
+article {
+    text-align:justify;
+    font-family:Arial, Helvetica, sans-serif;
+    color:brown;
+}
+
+.article {
+    font-size:1.6em;
+    text-align:justify;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.col, .col2 {flex:50%; margin-left:50px;}
+.col2 {text-align:center; display:block; margin-top:auto; margin-bottom:auto;}
+
+.row {display:flex; margin-bottom:30px;}
+
+h2 {
+    font-family:'Times New Roman', Times, serif;
+    font-size:4em;
+    text-shadow:3px 3px 0px white, 5px 5px 5px black;
+    text-align:left;
+    margin-bottom:30px;
+    color:brown;
+}
+
+h3 {
+    font-family:'Times New Roman', Times, serif;
+    font-size:2.5em;
+    text-shadow:3px 3px 0px white, 5px 5px 5px black;
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.pictures {width:65%; margin-top:30px;}
+
+ol {
+    font-size:1.6em;
+    color:brown;
+}
+
+.contactp {
+    text-align:justify;
+    font-size:1.6em;
+}
+
+form {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    color:brown;
+    min-width:300px;
+    width:30%;
+    margin-top:20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    padding-right:10px;
+    padding-left:10px;
+    background-color:lightgray;
+    padding-bottom:30px;
+    border:0;
+}
+
+legend {
+    font-size:1.3em;
+    text-align:left;
+    margin-bottom:10px;
+}
+
+label {font-size:1em;}
+
+input[type=submit], input[type=reset] {
+    width:100px;
+    height:50px;
+    font-size:1.2em;
+    color:brown;
+    background-color:beige;
+    border:2px black solid;
+    cursor:pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {border:2px brown solid;}
+
+/*footer*/
+
+footer, #footer {
+    height:50px;
+    width:auto;
+    margin-top:50px;
+    display:flex;
+    flex-flow:row-reverse wrap;
+    margin-bottom:20px;
+}
+
+.switch {
+    border:0;
+    background-color:transparent;
+    background-position:center;
+    background-size:88%;
+    width:100px;
+    height:50px;
+    cursor:pointer;
+}
+
+.switch#right {
+    float:right; 
+    background-image:url("image/jobbnyil.png");
+}
+
+.switch#left {
+    float:left; 
+    background-image:url("image/balnyil.png");
+}
+
+a:link {color:brown; text-decoration:none;}
+a:visited {color:blueviolet; text-decoration:none;}
+a:hover {color:black; text-decoration:none;}
+
+.tetejere {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    width:20%;
+    margin:auto;
+    background-color:beige;
+    text-align:center;
+}
+
+#dates {
+    margin:auto;
+    font-family:'Bebas Neue', cursive;
+    font-size:2em;
+    color:brown;
+    text-align:center;
+    background-color:beige;
+    opacity:0.8;
+    width:20%;
+}
+
+@media print {
+    body {
+        font-family:'Times New Roman', Times, serif;
+        margin:0cm;
+    }
+
+    header, main, footer, #header, #tartalom, #footer {
+        width:100%;
+        padding:0;
+        height:auto;
+    }
+
+    article, .col, .col2, .row {
+        color:black;
+        font-size:0.9em;
+        margin:0;
+    }
+
+    .col2 {display:flex; flex-flow:row wrap;}
+
+    .menutitle, h2, h3 {
+        color:black;
+        font-size:0.5em;
+        text-decoration:none;
+        text-shadow:0 0 0 transparent, 0 0 0 transparent;
+        margin:0;
+    }
+
+    #menutitle {width:100%;}
+
+    nav, .nav, #dates, video, #switcher, aside, .tetejere {display:none;}
+
+    #mainpic, .pictures {
+        width:40%; 
+        margin-left:30px;
+    }
+
+    caption {
+        color:black;
+        font-size:1.5em;
+    }
+
+    table {page-break-before:always;}
+
+    table th {
+        background-color:transparent;
+        font-size:1.3em;
+        border:2px black solid;
+    }
+
+    table tr {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:transparent;
+        color:black;
+        text-align:center;
+    }
+
+    table td {border:2px black solid; font-size:1em;}
+
+    table td .pictures {width:70%; margin:0;}
+
+    ol {font-size:0.9em; color:black;}
+
+    form, input[type=reset], input[type=submit] {color:black;}
+
+    abbr {text-decoration:none;}
+}
+
+@media (min-width:501px) and (max-width:1000px) {
+    
+    .row {display:block;}
+
+    #dates {font-size:1.6em;}
+
+    .tetejere{font-size:1.6em;}
+
+    article p {font-size:1.45em;}
+
+    .article {font-size:1.45em;}
+
+    .menutitle {font-size:3em;}
+
+    .menupic {display:none;}
+
+    .menubut, .menucur {font-size:1.3em;}
+
+    h2 {font-size:3em;}
+
+    h3 {font-size:2em;}
+
+    ol {font-size:1.45em;}
+
+    caption {font-size:1.6em;}
+
+    table td {font-size:1em;}
+
+    table th {font-size:1.4em;}
+
+    aside {font-size:0.7em;}
+
+    .contactp {font-size:1.45em;}
+
+    legend {font-size:1em;}
+
+    label {font-size:0.7em;}
+
+    input {font-size:0.9em;}
+
+    form {float:left;}
+}
+
+@media screen and (max-width:500px) {
+
+    .row {display:block;}
+
+    #dates {font-size:1.3em;}
+
+    .tetejere{font-size:1.3em;}
+
+    article p {font-size:1.3em;}
+
+    .article {font-size:1.3em;}
+
+    .menupic {display:none;}
+
+    .menutitle {font-size:2.5em;}
+
+    .menubut, .menucur {font-size:1em;}
+
+    h2 {font-size:2.5em;}
+
+    h3 {font-size:1.7em;}
+
+    ol {font-size:1.3em;}
+
+    caption {font-size:1.2em;}
+
+    table td {font-size:0.7em;}
+
+    table th {font-size:1em;}
+
+    aside {font-size:0.5em;}
+
+    .contactp {font-size:1.3em;}
+
+    legend {font-size:0.8em;}
+
+    label {font-size:0.6em;}
+
+    input {font-size:0.7em;}
+
+    form {float:left;}
+}

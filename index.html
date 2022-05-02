@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Kezdőoldal - Leopard 2 széria</title>
+</head>
+<body onload='writeDate()'>
+    <nav id="tartalomraugras">
+        <a href="#tartalom">Ugrás a tartalomra!</a>
+    </nav>
+    <header id="teteje">
+        <div id="menutoprow">
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2AV.jpg" alt="Leopard 2AV tank" onclick = "window.location.href = 'image/Leopard_2AV.jpg'">
+            </div>
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2PL.jpg" alt="Leopard 2PL tank" onclick = "window.location.href = 'image/Leopard_2PL.jpg'">
+            </div>
+            <div id="menutitle">
+                <h1 class="menutitle">Kezdőlap</h1>
+            </div>
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2A5_PSO.jpg" alt="Leopard 2A5 PSO tank" onclick = "window.location.href = 'image/Leopard_2A5_PSO.jpg'">
+            </div>
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2A7.jpg" alt="Leopard 2A7 tank" onclick = "window.location.href = 'image/Leopard_2A7.jpg'">
+            </div>
+        </div>
+            <nav>
+                <button class="menubut" onclick="window.location.href = 'techdata.html'">Technikai adatok</button>
+                <button class="menubut" onclick="window.location.href = 'armament.html'">Fegyverzet</button>
+                <button class="menucur">Kezdőlap</button>
+                <button class="menubut" onclick="window.location.href = 'operatingcountries.html'">Üzemeltető országok</button>
+                <button class="menubut" onclick="window.location.href = 'contact.html'">Kapcsolat</button>
+            </nav>
+    </header>
+    <main id="tartalom">
+        <button id="switcher" onclick="toggleCSS('style.css', 'alternative.css')"></button>
+        <article>
+            <h2>Bevezető</h2>
+            <div class="row">
+                <div class="col">
+                    <p><strong>Kedves látogató!</strong><br>
+                    Guszti vagyok <abbr title="Eötvös Loránd Tudományegyetem Informatikai Kar">ELTE IK</abbr> hallgató, az oldal megálmodója és fejlesztője. 
+                    Ez az oldal azért jött létre, hogy a világ legmodernebb <span lang="en">Main Battle Tank</span>-jeinek (<abbr title="Main Battle Tank">MBT</abbr>) a németek által fejlesztett Leopárd 2 tankszériának ismert adatait összegyűjtse és ismeretterjesztő jelleggel az olvasónak elérhetővé tegye. 
+                    Sok típusa van a szériának, hiszen ahogy múlnak az évek a haditechnológiának is fejlődnie kell, ezeket külön túl részletesen nem érinti a weboldal, csak felületesen az egyedi ismertetőiket sorolja fel. 
+                    Mivel sok dolog titkosított a tankokról hadászati indokokkal nem biztos, hogy az oldalon olvasott dolgok megbízhatóak így kérem ne vegyenek mindent ténynek, illetve tanítási célú felhasználásra a weboldalt nem javaslom. 
+                    A fenti menüsorban egyszerűen lehet lépkedni a szempontok között, de a jobb és bal alsó sarokban lesz egy nyíl is ami az előző és következő oldalra dob át ezzel egy ismertető prospektus hatását keltve. 
+                    A weboldal ismertetőjének végére értünk jó olvasást kívánok és köszönöm szépen, hogy meglátogatta weboldalamat.</p>
+                </div>
+                <div class="col2">
+                    <figure>
+                        <img id="mainpic" src="image/small_Leopard_2A4_HU.jpg" alt="Leopárd 2A4 tank magyar festéssel" onclick = "window.location.href = 'image/Leopard_2A4_HU.jpg'">
+                    </figure>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <button class="switch" id="right" onclick="window.location.href = 'armament.html'"></button>
+        </nav>
+        <div class="tetejere">
+            <nav>
+                <a href="#teteje">Ugrás az oldal tetejére!</a>
+            </nav>
+        </div>
+        <div id="dates">Jelenlegi dátum: <span id="date"></span></div>
+        <nav>
+            <button class="switch" id="left" onclick="window.location.href = 'contact.html'"></button>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+    <script src="script.js"></script>
+    <title>Fegyverzet - Leopard 2 széria</title>
+</head>
+<body onload='writeDate()'>
+    <nav id="tartalomraugras">
+        <a href="#tartalom">Ugrás a tartalomra!</a>
+    </nav>
+    <header id="teteje">
+        <div id="menutoprow">
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2AV.jpg" alt="Leopard 2AV tank" onclick = "window.location.href = 'image/Leopard_2AV.jpg'">
+            </div>
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2PL.jpg" alt="Leopard 2PL tank" onclick = "window.location.href = 'image/Leopard_2PL.jpg'">
+            </div>
+            <div id="menutitle">
+                <h1 class="menutitle">Fegyverzet</h1>
+            </div>
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2A5_PSO.jpg" alt="Leopard 2A5 PSO tank" onclick = "window.location.href = 'image/Leopard_2A5_PSO.jpg'">
+            </div>
+            <div class="menutop">
+                <img class="menupic" src="image/small_Leopard_2A7.jpg" alt="Leopard 2A7 tank" onclick = "window.location.href = 'image/Leopard_2A7.jpg'">
+            </div>
+        </div>
+            <nav>
+                <button class="menubut" onclick="window.location.href = 'techdata.html'">Technikai adatok</button>
+                <button class="menucur">Fegyverzet</button>
+                <button class="menubut" onclick="window.location.href = 'index.html'">Kezdőlap</button>
+                <button class="menubut" onclick="window.location.href = 'operatingcountries.html'">Üzemeltető országok</button>
+                <button class="menubut" onclick="window.location.href = 'contact.html'">Kapcsolat</button>
+            </nav>
+        </header>
+        <main>
+            <article>
+            <button id="switcher" onclick="toggleCSS('style.css', 'alternative.css')"></button>
+            <h2>Fegyverzet</h2>
+            <div class="row">
+                <div class="col">
+                    <p>A tankszéria fő fegyverzete kezdetekben a <span lang="de">Rheinmetall</span> által gyártott 120mm csőátmérőjű L44 ágyú. 
+                    A későbbiekben ezt fejlesztették tovább az ugyanilyen méretű <span lang="de">Rheinmetall</span> 120mm L55 ágyúvá. 
+                    Az ágyú nagy népszerűséget és elismerést szerzett a NATO országai között, sokan licenszelték és a saját tankjaikon is ezt használják. 
+                    (pl. M256 Amerikában, OTO <span lang="it">Breda</span> L/44 Olaszországban, L30A1 Angliában) A tank testében 27 lőszert lehet tárolni és a toronyban 15 további lőszer fér még el. 
+                    Az ágyú töltését az egyik legénységi tag végzi el. Az ágyú stabilizátorral van ellátva, ami garantálja azt, hogy a cső legtöbb esetben egyenesen nézzen a célpont felé. 
+                    Az ágyú nem huzagolt, avagy képes sok féle szárnyas lőszert kilőni nagy pontossággal.</p>
+                </div>
+                <div class="col2">
+                    <img class="pictures" src="image/smallL44_L55.png" alt="L44 és L55 típusú ágyúk" onclick="window.location.href = 'image/L44_L55.png'">
+                </div>
+            </div>
+            <video controls poster="image/lovokep.png">
+                <source src="video/Leopard_2A6_firing.mp4" type="video/mp4">
+                A böngészője nem támogatja a videó megtekintését.
+            </video>
+            <aside>Ebben a videóban egy Leopárd 2A6 látható ahogy 5-től való visszaszámlálás után parancsra a kihelyezett célpontra lő az ágyújával.</aside>
+            </article>
+            <table>
+                <caption>
+                    <strong>Lőszertípusok</strong>
+                    <details>
+                        <summary>Táblázat</summary>
+                        <p>A táblázatban a leggyakrabban használt lőszertípusok, azokról egy kép illetve egy rövid leírás látható.</p>
+                    </details>
+                </caption>
+                <tr>
+                    <th>Lőszer neve:</th>
+                    <th>Kép a lőszerről:</th>
+                    <th>Rövid leírás:</th>
+                </tr>
+                <tr>
+                    <td class="fstrow">
+                        <abbr title="Deutches Modell">DM</abbr>-63
+                    </td>
+                    <td class="sndrow">
+                        <img class="pictures" src="image/small_DM63.jpg" alt="DM-63 típusú lőszer" onclick="window.location.href='image/DM63.jpg'">
+                    </td>
+                    <td class="rdrow">
+                        <abbr title="Deutches Modell">DM</abbr>-63 <abbr title="Armor Piercing Fin Stabilized Discarding Sabot">APFSDS</abbr> (szárny-stabilizált leválóköpenyes páncéltörő) lőszer.
+                        A lövedék külső köpenye egy nyílhegy formájú magot rejt magában.
+                        A kialakítása miatt nagy páncélátütő képességgel rendelkezik.
+                        A stabilizáló szárnyak a mag végén forgó mozgást és stabil röppályát biztosít a lőszernek.
+                        Hatótávja 4000 méter körül van és sebessége elérheti az 1750 méter/másodperc.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fstrow">
+                        <abbr title="Deutches Modell">DM</abbr>-12
+                    </td>
+                    <td class="sndrow"> 
+                        <img class="pictures" src="image/small_DM12.jpg" alt="DM-12 típusú lőszer" onclick="window.location.href='image/DM12.jpg'">
+                    </td>
+                    <td class="rdrow">
+                        <abbr title="Deutches Modell">DM</abbr>-12 <abbr title="High Explosive Anti Tank Grenade - Fin Stabilized">HEAT-FS</abbr> (forgás stabilizált kumulatív gránát) lőszer.
+                        A lövedék két fő részből áll egy robbanó és egy kumulatív töltetből.
+                        Becsapódáskor a speciálisan kialakított robbanófej egy irányba összpontosítja a robbanást, ezzel páncélátütő képessége megmarad nagyobb távolságra is.
+                        A stabilizáló szárnyak a mag végén forgó mozgást és stabil röppályát biztosít a lőszernek.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fstrow">
+                        <span lang="en">Canister</span>
+                    </td>
+                    <td class="sndrow">
+                        <img class="pictures" src="image/small_canister.jpg" alt="Canister típusú lőszer" onclick="window.location.href='image/canister.jpg'">
+                    </td>
+                    <td class="rdrow">
+                        <span lang="en">Canister</span> lőszer lényegében gyalogság ellen lett kitalálva.
+                        Sok repesz van a lőszerben, ami kilövéskor azonnal szétszóródik nagy erővel ezzel súlyos sérüléseket tud okozni azokon, akiket eltalál.
+                        Páncélátütő képessége nincs ezért akár baráti páncélos egységek mellett is lehet használni ezeket a lőszereket.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fstrow">
+                        <abbr title="Penetrator-Enhanced Lateral Effect">PELE</abbr>
+                    </td>
+                    <td class="sndrow">
+                        <img class="pictures" src="image/small_PELE.png" alt="PELE típusú lőszer" onclick="window.location.href='image/PELE.jpg'">
+                    </td>
+                    <td class="rdrow">
+                        A <abbr title="Penetrator-Enhanced Lateral Effect">PELE</abbr> lőszer.
+                        A lövedék úgy viselkedik, mint egy páncélátütő lőszer, de becsapódáskor nyomás keletkezik a fejben, ami átütés után szétrobban.
+                        Ez azt eredményezi, hogy nincs jelentősebb robbanóanyag a lövedékben és biztonságosabb a szállítása, kezelése is.
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <nav>
+                <button class="switch" id="right" onclick="window.location.href = 'techdata.html'"></button>
+            </nav>
+            <div class="tetejere">
+                <nav>
+                    <a href="#teteje">Ugrás az oldal tetejére!</a>
+                </nav>
+            </div>
+            <div id="dates" >Jelenlegi dátum: <span id="date"></span></div>
+            <nav>    
+                <button class="switch" id="left" onclick="window.location.href = 'index.html'"></button>
+            </nav>
+        </footer>
+    </body>
+</html>
